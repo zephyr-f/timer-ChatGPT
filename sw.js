@@ -3,8 +3,8 @@ const assetsToCache = [
   'index.html',
   'app.js',
   'styles.css',
-  'icon-192.png',
-  'icon-512.png',
+  '/images/icons/icon-192.png',
+  '/images/icons/icon-512.png',
 ];
 
 self.addEventListener('install', event => {
