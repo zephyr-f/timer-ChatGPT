@@ -17,6 +17,19 @@
         <h2 id="timerDisplay">00:00</h2>
     </div>
     <script src="app.js"></script>
+    <script>// Add this at the beginning of your app.js file
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker
+                    .register('sw.js')
+                    .then(registration => {
+                        console.log('Service Worker registered:', registration);
+                    })
+                    .catch(error => {
+                        console.error('Service Worker registration failed:', error);
+                    });
+            });
+        }</script>
 </body>
 
 </html>
